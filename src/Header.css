@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "Anurati";
+  src: url("fonts/Anurati-Regular.otf");
+}
+:root {
+  --blackRussian: #1f1f26;
+  --greyWhite: #f9f9f9;
+  --pacificBlue: #000000;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+/* Utility Classes  and stylings */
+img {
+  width: 100%;
+  display: block;
+}
+.text {
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 400;
+  /* opacity: 0.7; */
+}
+.btn {
+  margin: 25px 0;
+  text-transform: uppercase;
+  background: var(--blackRussian);
+  color: #fff;
+  border: 1.5px solid var(--blackRussian);
+  font-size: 14px;
+  padding: 12px 26px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  color: var(--pacificBlue);
+}
+
+/* header */
+.header {
+  max-height: 100vh;
+  /* background-image: conic-gradient(rgb(24, 22, 22), rgb(88, 19, 19));
+
+  background-image: linear-gradient(to right, rgb(255, 255, 255), #007bff); */
+
+  backdrop-filter: blur(7px);
+  background-color: #780096c9;
+
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  position: sticky;
+  position: fixed;
+  z-index: 2;
+  box-shadow: -11px 5px 22px #070505, 11px -11px 22px #ffffff;
+  border-radius: 5px;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: -10px 20px;
+  /* margin-top: 18px; */
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+
+  max-width: 15%;
+  min-width: 100px;
+  margin: auto;
+  padding-right: 0px;
+}
+.header__option {
+  align-items: flex-end;
+  min-width: fit-content;
+  max-width: 44px;
+}
+.head-top {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px 10%;
+}
+
+.brand-name {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  /* font-family: "Anurati", sans-serif; */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.4s ease;
+  align-items: center;
+}
+.brand-name span {
+  background: rgb(255, 255, 255);
+  color: var(--blackRussian);
+  padding: 5px 10px;
+  transition: background 0.4s ease;
+  border-radius: 10px;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  /*
+  background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  */
+}
+.brand-name:hover {
+  color: var(--pacificBlue);
+}
+.brand-name span:hover {
+  background: rgb(44, 0, 44);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.head-icon:hover {
+  color: var(--pacificBlue);
+}

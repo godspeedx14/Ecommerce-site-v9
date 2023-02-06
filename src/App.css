@@ -1,0 +1,63 @@
+.app {
+  /*background-image: url("https://images.unsplash.com/photo-1533497197926-c9e810dcea9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGJsYWNrJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+
+  background-image: url("https://images.unsplash.com/photo-1598046147932-c78b6d9c0905?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fGJsYWNrJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-image: url("https://images.unsplash.com/photo-1605106325682-3482f7c1c9c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=663&q=80");
+  background-image: url("https://media.istockphoto.com/id/917869118/vector/computer-chips-flat-vector-icons.jpg?s=170667a&w=0&k=20&c=2q7QRFYCexIpFC0I5uysBU8RogAWrfTNzW6xKXg3F-k=");
+  background-image: url("https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+  */
+  background-color: rgb(207, 207, 207);
+  max-width: 100%;
+  z-index: -1;
+  animation: fadeIn 5s;
+  background-image: url("https://i.pinimg.com/originals/fb/1b/00/fb1b00f40251906c6d4544e9379d08cd.gif");
+  /* background-blend-mode: color-dodge; */
+  background-blend-mode: color-dodge;
+  background-repeat: repeat;
+  overflow-x: hidden;
+}
+
+/* Animations */
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
